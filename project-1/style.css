@@ -64,17 +64,40 @@ h2{
 
 }
 
-button{
 
-    border-radius: 5px;
-    background-color: lightseagreen;
-    border-color: lightseagreen;
-    color: mintcream;
-    padding: 5px 10px;
-    font-size: 15px;
-    width: 50%;
+.form-control.success input{
+    border-color: green;
 }
 
-button:focus{
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form button{
+    cursor: pointer;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    color: mintcream;
+    padding: 5px 10px;
+    font-size: 20px ;
+    width:100%;
+    display: block;
+    margin-top: 20px;
+}
+
+.form button:focus{
     outline: lightseagreen;
 }
