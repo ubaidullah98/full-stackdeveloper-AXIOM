@@ -88,7 +88,7 @@ h2{
 
 .form button{
     cursor: pointer;
-    border: 2px solid lightseagreen;
+    border-color: lightseagreen;
     border-radius: 5px;
     background-color: lightseagreen;
     color: mintcream;
@@ -100,6 +100,6 @@ h2{
     
 }
 
-.form button:focus{
-    outline: lightseagreen;
+.form button:hover{
+    background-color:seagreen;
 }
