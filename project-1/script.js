@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const password2 = document.getElementById('confirm password');
+const password2 = document.getElementById('password2');
 
 function showError(input,message){
     const formControl = input.parentElement;
@@ -18,10 +18,20 @@ function showSuccess(input){
     const small = formControl.querySelector('small');
 }
 
-function isValidEmail(email){
+function checkEmail(input){
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+    if (re.test(input.value.trim())){
+        showSuccess(input);}
+    else {
+        showError(input,`this is not a valid email`);
+    }
 }
+
+function checkpasswordsMatch(input1,input2){
+    if(input1.value !== input2.value)
+        showError(input2,"passwords don't match");}
+    
+
 
 function checkRequired(inputArray){
     inputArray.forEach(function(input) {
@@ -41,10 +51,26 @@ function getFieldId(input){
 
 
 }
+function checkLength(input,min,max){
+    if (input.value.length < min){
+        showError(input,`${getFieldId(input)} is less than ${min} characters`);}
+    else if (input.value.length > max ){
+        showError(input, `${getFieldId(input)} is more than ${max} characters`);}
+    else {
+        showSuccess(input);
+    }
+        
+}
+
+
+
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
-    checkRequired([username,email,password,password2])
-    
+    checkRequired([username,email,password,password2]);
+    checkLength(username,5,15);
+    checkLength(password,5,20);
+    checkEmail(email);
+    checkpasswordsMatch(password,password2);
 });

@@ -94,10 +94,9 @@ h2{
     color: mintcream;
     padding: 5px 10px;
     font-size: 20px ;
-    width:100%;
     display: block;
     margin-top: 20px;
-    
+    width: 100%;
 }
 
 .form button:hover{
