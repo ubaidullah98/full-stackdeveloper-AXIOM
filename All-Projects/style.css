@@ -2,39 +2,29 @@
 
 *{
     box-sizing: border-box;
-
-
 }
 
 
 
 body{
-    background-color: whitesmoke;
+    background-color:lightblue;
     font-family: 'Ubuntu', sans-serif;
     min-height: 100vh;
-
-
-
 }
+h1{
+    color: black;
+    text-align: center ;
+}
+
 
 .container{
     
-    background-color: lightskyblue;
+    display: flex;
+    flex-direction: row;
+    background-color:lightblue;
     border-radius: 20px;
     height: 100vh;
-
-    
-   
-    
-
 }
-
-.h1{
-    color: lightyellow;
-    text-align: center ;
-    display: block;
-}
-
 
 
 .project1{
@@ -51,3 +41,17 @@ padding-left: 50px;
 .project1 img{
     border-radius: 10px;
 }
+
+.project2{
+    padding-left: 50px;
+    }
+    
+    .project2 h2{
+        position: relative;
+        padding-left: 15px;
+    
+    }
+    
+    .project2 img{
+        border-radius: 10px;
+    }
