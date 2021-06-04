@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #191919;
+    font-family: 'Paytone One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color: honeydew;
+}
+
+.screen{
+    cursor: pointer;
+    width: 60%;
+    background-color: black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.controls{
+    background-color: #313131;
+    color: blanchedalmond;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+
+.controls .btn{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    
+
+}
+
+.controls .fa-play{
+    color: wheat;
+}
+
+.controls .fa-stop{
+    color: firebrick;
+    margin-right: 10px;
+}
+
+.controls .fa-pause{
+    color: ghostwhite;
+}
+
+.controls .timestamp{
+  color: ghostwhite;
+  margin-left: 10px;
+}
+@media (max-width :800px){
+    .screen,.controls{
+        width: 90%;
+    }
+
+    
+}

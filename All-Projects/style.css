@@ -31,27 +31,37 @@ h1{
 position: relative;
 padding-left: 50px;
 }
-
 .project1 h2{
     position: relative;
     padding-left: 80px;
 
 }
-
 .project1 img{
     border-radius: 10px;
 }
 
+
 .project2{
     padding-left: 50px;
     }
-    
     .project2 h2{
         position: relative;
         padding-left: 15px;
     
     }
-    
     .project2 img{
         border-radius: 10px;
     }
+
+
+    .project3{
+        padding-left: 50px;
+        }
+    .project3 h2{
+        position: relative;
+        padding-left: 50px;
+        
+        }  
+    .project3 img{
+        border-radius: 10px;
+        }
