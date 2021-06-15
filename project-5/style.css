@@ -1,0 +1,213 @@
+:root{
+    --modal-duration: 1s;
+    --primary-color: #34ace0;
+    --secondary-color: #0652DD;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    transition: transform 0.5s ease;
+
+}
+
+body.show-nav{
+    transform: translate(200px);
+}
+
+nav{
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200,200,200,0.1);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+
+}
+
+nav .logo{
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    border-bottom: 2px solid rgba(200,200,200,0.1);
+    padding: 20px;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;    
+}
+
+header{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 150%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+
+}
+
+header p{
+    margin: 30px 0;
+}
+
+button{
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.toggle{
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.cta-btn{
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+
+.container{
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+
+}
+
+.modal-container{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+
+}
+
+.modal-container.show-modal{
+    display: block;
+
+}
+.modal{
+    background-color: white;
+    border-radius: 20px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px;
+
+}
+.modal-header h3{
+    margin: 0;
+
+}
+.modal-content{
+    padding: 20px;
+}
+
+.modal-form div{
+
+    margin: 15px 0;
+
+
+}
+
+.modal-form label{
+    display: block;
+    margin-bottom: 5px;
+
+    
+}
+
+
+.modal-form input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}
+
+.close-btn{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: white;
+
+
+}
+
+.submit-btn{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    border: 0;
+}
+
+@keyframes modalopen {
+
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+
+    }
+    
+}

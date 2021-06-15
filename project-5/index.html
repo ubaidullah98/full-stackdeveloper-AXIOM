@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Landing Page</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="IMG_3044.jpg" alt="user" height="100">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <button class="toggle" id="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        
+        <h1>My Landing Page</h1>
+        <button class="cta-btn" id="open">Signup</button>
+    </header>
+
+    <div class="container">
+        <h2>What is Axiom</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia earum quis ullam impedit vel minus molestiae, iste tenetur obcaecati sit perspiciatis inventore molestias quaerat dolores perferendis provident sed non.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi blanditiis consectetur accusamus eveniet culpa nihil earum! Vitae distinctio quidem voluptates.</p>
+        <h2>Learn More</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi in sequi dignissimos ad commodi iusto dolorum, fuga sapiente similique quaerat, perferendis doloremque non aut neque magnam iste ex at atque rem! Deserunt possimus cumque quos quasi veniam, earum architecto, unde inventore officia iure deleniti expedita alias necessitatibus? Nam officiis cumque modi id reiciendis, voluptates accusamus nihil eius, adipisci a doloribus.</p>
+        <h2>Projects</h2>
+        <ul>
+            <li>Project1</li>
+            <li>Project2</li>
+            <li>Project3</li>
+            <li>Project4</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laudantium officiis quis, doloremque quam quia consequuntur facere modi suscipit animi ipsum cupiditate, rerum assumenda sed minus adipisci molestiae amet? Natus, voluptates praesentium. Minus cumque sunt mollitia nemo nihil? Iusto, ex?</p>
+
+        <div class="modal-container" id="modal">
+            <div class="modal" >
+                <button class="close-btn" id="close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <div class="modal-header">
+                    <h3>Signup</h3>
+                </div>
+                <div class="modal-content">
+                    <p>Register for Classes</p>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter Name"/>
+                        </div>
+                        <div>    
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Enter Email"/>
+                        </div>
+                        <div>    
+                            <label for="name">Password</label>
+                            <input type="password" id="password" placeholder="Enter Password" autocomplete="off"/>
+                        </div>
+                        <div>
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" id="Password2" placeholder="Confirm Password" autocomplete="off"/> 
+                        </div>
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+       
+
+
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
